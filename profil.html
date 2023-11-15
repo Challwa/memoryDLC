@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ENI - MEMORY - Profil</title>
+</head>
+<body>
+    <header>
+            <div>
+                <h1>ENI - MEMORY - Profil</h1>
+            </div>
+            <section>
+                <nav>
+                    <ul>
+                        <li><i></i><a href="index.html">Accueil</a></li>
+                        <li><i></i><a href="inscription.html">S'inscrire</a></li>
+                        <li><i></i><a href="connecter.html">Se connecter</a></li>
+                        <li><i></i><a href="profil.html">Profil</a></li>
+                        <li><i></i><a href="jouer.html">Jouer</a></li>
+                    </ul>
+                </nav>
+            </section>
+    </header>
+
+    <section class="cadre">
+            <h2>Profil</h2>
+            <h4>Nom d'utilisateur</h4>
+                <p>afficher nom </p>
+            
+            <h4>Email</h4>
+                <p>afficher email</p>
+
+            <div class="choixJeu">
+                <label for="">Choix du Memory</label>                
+                <select name="select" id="imageSelector" onchange="changeImage()">
+                    <option value="memory_detail_animaux_animes.png">Animaux</option>
+                    <option value="memory_detail.png">Légumes</option>
+                    <option value="memory_details_dinosaures_avec_nom.png">Dinosaures</option>
+                </select>
+
+                <img id="imageContainer" src="memory_detail_animaux_animes.png" alt="Initial Image" class="imageChoix">
+
+            </div>
+
+            <div class="boiteAbouttonJeu">
+                <input type="submit" value="Enregistrez Option" class="butt">
+            </div>
+
+            <h4>Derniers Scores :</h4>
+                <p>afficher scores</p>
+
+    </section>
+
+    <script type="" src="projet-test/js/app.js"></script> 
+    <!-- ca marche pas module -->
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    background:linear-gradient(to right, aquamarine, rgb(198, 228, 198));
+    background-size: cover;
+}
+header{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+nav a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+a:hover{
+    background-color: gold;
+}
+
+h2{
+    text-align: center;
+}
+.cadre{
+    background-color: rgb(19, 18, 18);
+    width: 33.33%;
+    padding: 1vh;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 3%;
+    padding-left: 1%;
+    color: white;
+
+}
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr; 
+    grid-gap: 30px;
+}
+input{
+    background: rgb(19, 18, 18);
+    color: white;
+}
+input:invalid{
+    border: 1px solid red;
+}
+::placeholder{
+    color: gray;
+}
+.butt{
+    background-color: azure;
+    width: 140px;
+    height: 30px;
+    color: black;
+}
+.boiteAboutton{
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.restri{
+    font-size: 14px;
+    color: #666;
+    margin-top: 0;
+}
+.choixJeu{
+    padding: 1%;
+    margin: 1%;
+    height: 350px;
+}
+select{
+    width: 180px;
+}
+.boiteAbouttonJeu{
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.imageChoix{
+    width: 97%;
+    height: 300px;
+    padding: 1%;
+    margin-top: 1rem;
+}
+
+/* mdp strength */
+
+#strength-indicator {
+    width: 620px;
+    /* Ajustez la largeur selon vos besoins */
+    height: 30px;
+    /* Ajustez la hauteur selon vos besoins */
+}
+
+.faible {
+    background-color: red;
+    background-image: url('chemin/vers/image-faible.png');
+}
+
+.moyen {
+    background-color: orange;
+    background-image: url('chemin/vers/image-moyen.png');
+}
+
+.fort {
+    background-color: green;
+    background-image: url('chemin/vers/image-fort.png');
+}
